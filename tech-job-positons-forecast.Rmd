@@ -2,24 +2,16 @@
 title: "Trends and Forecast in Germany's Tech Job Market"
 author: "Rani"
 date: "2025-01-16"
-output:
-  pdf_document: default
-  html_document:
-    df_print: paged
+output:pdf_document: default
+  
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Job Positions Analysis
-
-* By extracting unique job positions and their monthly frequency from January to December, we will see the most popular jobs (Top 20 Positions)
-
-* By counting the frequency of job positions in each month, we will see which position is most popular on a month (Most Popular Position Per Month)
-
-
-```{r Load and inspect dataset, include = FALSE}
+## Load and inspect dataset
+```{r Load libraries and nspect dataset}
 
 # Load necessary libraries
 library(tidyverse)
@@ -28,10 +20,8 @@ library(readr)
 library(tidytext)
 library(caTools)
 
-# Path to your updated dataset
-file_path <- "C://Users//FM Program-CBAA//Documents//Talents2Germany//data_analysis_project//final_data_updated.csv"
+file_path <- "jobs-dataset.csv"
 
-# Load the updated dataset
 data_updated <- read_csv(file_path) %>%
 spec(data_updated)
 
@@ -113,23 +103,3 @@ top_jobs_2025 <- future_data %>%
 top_jobs_2025 %>%
   select(Position = phrase)
 ```
-
-## Why these positions will be this year's top jobs
-
-*Software Developers and Software Engineers*
-
-* Software developer roles are highly in demand because they require knowledge of both front-end and back-end technologies. This versatility makes full stack professionals valuable assets for companies looking to build comprehensive, scalable applications. There is also a great need for functional system architecture design and the integration of both, hence the demand as well, for Software Engineers.
-
-*Senior Software Engineer*
-
-* Senior roles, particularly Senior Software Engineers, are in significant demand. These positions require a higher level of expertise and experience, making them crucial for leading projects, mentoring junior developers, and driving technological advancements within organizations.
-
-*Senior Frontend Developer*
-
-* There is a strong demand for professionals with specialized front-end skills. Frontend developers are essential for creating responsive, user-friendly interfaces and ensuring a positive user experience. This role is critical as users increasingly interact with digital products.
-
-*DevOps Engineer*
-
-* The demand for DevOps Engineers is on the rise due to their crucial role in bridging the gap between development and operations teams.DevOps Engineers are responsible for (CI/CD) pipelines, which fast-track the time it takes to bring new features to the market. 
-
-
