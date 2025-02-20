@@ -4,6 +4,6 @@ This is sample Linear Regression Model Training of a 2024 tech job positions dat
 
  The full case study is published in:
  
-[![Button1](https://img.shields.io/badge/Click%20Me-Button1-blue)]([https://example.com](https://rpubs.com/rnx2024/trends-and-forecast-germany-tech-market))
+[![RPubs](https://img.shields.io/badge/Click%20Me-Button1-red)]([https://example.com](https://rpubs.com/rnx2024/trends-and-forecast-germany-tech-market))
 
 
